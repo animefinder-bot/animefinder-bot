@@ -1,6 +1,6 @@
 import random
 import httpx
-
+import os
 from telegram import (
     Update,
     InlineKeyboardButton,
@@ -21,7 +21,7 @@ from telegram.ext import (
 # SETTINGS
 # =========================
 
-BOT_TOKEN = "1234567..."
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 ANILIST_URL = "https://graphql.anilist.co"
 
